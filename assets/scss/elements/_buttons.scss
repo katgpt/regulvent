@@ -1,0 +1,45 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 600;
+	border-radius: 10px;
+}
+.btn-primary {
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+	&:hover {
+		background: #fff;
+		border: 1px solid #000;
+		color: #000;
+	}
+	&:focus {
+		background: #fff;
+		border: 1px solid #000;
+		color: #000;
+	}
+	&:active {
+		background: #fff;
+		border: 1px solid #000;
+		color: #000;
+	}
+}
+.btn-secondary {
+	
+	&:hover {
+
+	}
+	&:focus {
+		
+	}
+	&:active {
+		
+	}
+}

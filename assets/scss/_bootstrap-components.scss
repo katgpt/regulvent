@@ -1,0 +1,25 @@
+// Configuration
+@import "../libs/bootstrap/scss/_mixins";
+@import "../libs/bootstrap/scss/_functions";
+@import "../libs/bootstrap/scss/_variables";
+@import "../libs/bootstrap/scss/_utilities";
+
+// Layout & components
+@import "../libs/bootstrap/scss/_root";
+@import "../libs/bootstrap/scss/_reboot";
+@import "../libs/bootstrap/scss/_type";
+@import "../libs/bootstrap/scss/_containers";
+@import "../libs/bootstrap/scss/_grid";
+@import "../libs/bootstrap/scss/_forms";
+@import "../libs/bootstrap/scss/_buttons";
+@import "../libs/bootstrap/scss/_transitions";
+@import "../libs/bootstrap/scss/_dropdown";
+@import "../libs/bootstrap/scss/_nav";
+@import "../libs/bootstrap/scss/_close";
+@import "../libs/bootstrap/scss/_modal";
+
+// Helpers
+@import "../libs/bootstrap/scss/_helpers";
+
+// Utilities
+@import "../libs/bootstrap/scss/utilities/_api";
