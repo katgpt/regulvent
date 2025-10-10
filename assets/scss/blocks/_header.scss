@@ -1,3 +1,13 @@
 .header-wrapper {
 	padding-top: 30px;
+	color: $white-grey-2;
+	img {
+		height: 60px;
+		max-height: 60px;
+		width: 376px;
+		max-width: 376px;
+	}
+	.working-hours {
+		color: $spanish-gray;
+	}
 }
