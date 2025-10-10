@@ -7,7 +7,25 @@
 		width: 376px;
 		max-width: 376px;
 	}
+	.description {
+		padding: 10px 19px 19px 15px;
+	}
 	.working-hours {
 		color: $spanish-gray;
+		margin-top: 20px;	
+	}
+	.contact-block {
+		display: flex;
+		gap: 40px;
+		align-items: center;
+    	justify-content: end;
+		.contact-information {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			a {
+				color: $white-grey-2;
+			}
+		}
 	}
 }
