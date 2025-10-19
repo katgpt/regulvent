@@ -231,7 +231,7 @@ h6, .h6 {
 
 .text-small {
   font-size: 14px;
-  ine-height: 20px; }
+  line-height: 20px; }
 
 .text-normal {
   font-size: 16px;
@@ -633,6 +633,22 @@ a {
       gap: 10px; }
       .header-wrapper .contact-block .contact-information a {
         color: #2B2B2B; }
+  .header-wrapper .header-menu {
+    background-color: #00A2E6; }
+    .header-wrapper .header-menu .navmenu .menu-wrap .menu-sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header-wrapper .header-menu .navmenu .menu-wrap .menu-sidebar ul li {
+        padding: 24px 20px; }
+        .header-wrapper .header-menu .navmenu .menu-wrap .menu-sidebar ul li a {
+          color: #ffffff;
+          font-size: 20px;
+          line-height: 18px;
+          font-weight: 600; }
 
 /*.menu {
     padding: 0;

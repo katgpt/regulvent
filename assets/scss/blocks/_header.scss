@@ -28,4 +28,30 @@
 			}
 		}
 	}
+	.header-menu {
+		background-color: $bright-blue;
+		.navmenu {
+			.menu-wrap {
+				.menu-sidebar {
+					ul {
+						list-style: none;
+						padding-left: 0;
+						margin-bottom: 0;
+					    display: flex;
+						align-items: center;
+						justify-content: space-between;
+						li {
+							padding: 24px 20px;
+							a {
+								color: $white;
+								font-size: 20px;
+								line-height: 18px;
+								font-weight: 600;	
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
