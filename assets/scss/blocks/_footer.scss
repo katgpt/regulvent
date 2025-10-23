@@ -2,11 +2,22 @@
 	color: $white;
 	background: $dark-grey;
 	padding: 50px 0 20px;
+
+	@media screen and (max-width: 1199.9px) {
+		padding: 20px;
+	}
+
 	.footer-logo-block {
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 1199.9px) {
+			margin-bottom: 15px;
+		}
+
 		a {
 			display: block;
 			img {
+				width: 100%;
 				max-width: 100%;
 				height: auto;
 			}
@@ -19,6 +30,11 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 20px;
+
+		@media screen and (max-width: 1199.9px) {
+			margin-bottom: 40px;
+		}
+
 		.single-element {
 			width: 100%;
 			a {
@@ -76,6 +92,9 @@
 
 		&:not(:last-child) {
 			margin-bottom: 25px;
+			@media screen and (max-width: 1199.9px) {
+				margin-bottom: 30px;
+			}
 		}
 	}
 
@@ -94,6 +113,10 @@
 
 				&:not(:last-child) {
 					margin-bottom: 15px;
+
+					@media screen and (max-width: 1199.9px) {
+						margin-bottom: 10px;				
+					}
 				}
 
 				a {
@@ -110,16 +133,28 @@
 					@media screen and (max-width: 1399.9px) {
 						font-size: 16px;
 					}
+
+					@media screen and (max-width: 1199.9px) {
+						font-size: 12px;
+						line-height: 15px;
+						text-align: center;
+						width: 100%;
+					}
 				}
-			}
-		}
+			}			
+		}		
 	}
 
 	.widget-html {
+		text-align: center;
 		img {
 			width: 100%;
 			max-width: 290px;
 			height: auto;
+
+			@media screen and (max-width: 1199.9px) {
+				margin: 0 auto;	
+			}		
 		}
 	}
 
@@ -128,6 +163,14 @@
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 20px;
+
+		@media screen and (max-width: 1199.9px) {
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 5px;
+		}
+
 		span {
 			display: block;
 			font-size: 18px;
@@ -137,10 +180,18 @@
 			@media screen and (max-width: 1399.9px) {
 				font-size: 16px;
 			}
+
+			@media screen and (max-width: 1199.9px) {
+				text-align: center;
+			}
 		}
 	}
 
 	.copyright-block {
+		@media screen and (max-width: 1199.9px) {
+			margin-top: 30px;
+			text-align: center;
+		}
 		p {
 
 		}

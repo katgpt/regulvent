@@ -12,9 +12,19 @@
 
     // Мобильное меню и burger button и выпадающее подменю на ховере
     sidebarArrow = $('.menu-item-has-children > a');    
+    backButton = $('.app-back-button')
     sidebarArrow.click(function() {
-        $(this).next().slideToggle(300);
+        if(window.innerWidth > 1200) {
+            $(this).next().slideToggle(300);     
+        } else {
+            $(this).next().toggleClass('show-item'); 
+        };
     });
+    backButton.click(function() {        
+        $(this).parent().toggleClass('show-item');
+    });
+
+    
 
     // Кнопка Вверх
     $(window).scroll(function(){
@@ -46,7 +56,32 @@ window.addEventListener('load', () => {
     });
 
 
-   /*Menu toggle*/
+
+
+    /*Sub menu*/
+    const firstItem = document.querySelector('.sub-main-menu-item:first-child');
+    if(window.innerWidth > 1200) {
+        firstItem.classList.add('visible-hover');
+    };
+
+    const items = document.querySelectorAll('.sub-main-menu-item');
+    items.forEach(item => {
+        const itemLink = item.querySelector('.sub-main-menu-item-link');
+        const itemBack = item.querySelector('.app-back-button-2');
+        itemLink.addEventListener('click', () => {
+            items.forEach(el => el.classList.remove('visible-hover'));
+            item.classList.add('visible-hover');
+        });
+        itemBack.addEventListener('click', () => {
+            items.forEach(el => el.classList.remove('visible-hover'));
+            item.classList.remove('visible-hover');
+            console.log('hdhdhd');
+        });
+    });
+
+
+
+    /*Menu toggle*/
     const toggleButton = document.querySelector('.app-toggle-button')
     const navMenu = document.querySelector('.menu-wrapper')
     const bodyWrapper = document.querySelector('body')
@@ -66,18 +101,10 @@ window.addEventListener('load', () => {
                 bodyWrapper.classList.remove('overflow-hidden')    
                 htmlWrapper.classList.remove('overflow-hidden')   
                 headerWrapper.classList.remove('header-wrapper-open')
+
+                document.querySelector('.show-item').classList.remove('show-item')
+                document.querySelector('.visible-hover').classList.remove('visible-hover')
             }       
         })
     }
-
-
-    /*Sub menu*/
-    const items = document.querySelectorAll('.sub-main-menu-item');
-
-    items.forEach(item => {
-        item.addEventListener('click', () => {
-            items.forEach(el => el.classList.remove('visible-hover'));
-            item.classList.add('visible-hover');
-        });
-    });
 });
