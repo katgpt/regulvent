@@ -1,0 +1,148 @@
+.footer-wrapper {
+	color: $white;
+	background: $dark-grey;
+	padding: 50px 0 20px;
+	.footer-logo-block {
+		margin-bottom: 30px;
+		a {
+			display: block;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.footer-contacts-block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 20px;
+		.single-element {
+			width: 100%;
+			a {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				color: $white;
+
+				h6 {
+					margin: 0;
+
+					@media screen and (max-width: 1399.9px) {
+						font-size: 16px;
+					}
+				}
+
+				svg {
+					min-width: 25px;
+					color: $white;
+				}
+
+				&:hover {
+					color: $brand-blue;
+				}
+			}
+
+			div {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				color: $white;
+
+				h6 {
+					margin: 0;
+
+					@media screen and (max-width: 1399.9px) {
+						font-size: 16px;
+					}
+				}
+
+				svg {
+					min-width: 25px;
+					color: $white;
+				}
+
+				&:hover {
+					color: $brand-blue;
+				}
+			}
+		}
+	}
+
+	.widget {
+		color: $white;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	.widget-menu {
+		ul {	
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			&:not(:last-child) {
+				margin-bottom: 35px;
+			}
+
+			li {
+				width: 100%;
+
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+
+				a {
+					display: block;
+					font-size: 18px;
+					line-height: 22px;
+					font-weight: 600;
+					color: $white;
+
+					&:hover {
+						color: $brand-blue;
+					}
+
+					@media screen and (max-width: 1399.9px) {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.widget-html {
+		img {
+			width: 100%;
+			max-width: 290px;
+			height: auto;
+		}
+	}
+
+	.reg-info {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		span {
+			display: block;
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 600;
+
+			@media screen and (max-width: 1399.9px) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.copyright-block {
+		p {
+
+		}
+	}
+}

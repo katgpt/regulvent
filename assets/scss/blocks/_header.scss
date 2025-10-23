@@ -136,7 +136,7 @@
 								content: '';
 								width: 12px;
 								height: 6px;
-								background: url('assets/img/arrow.svg') no-repeat center;
+								background: url('../../assets/img/arrow.svg') no-repeat center;
 								display: block;
 							}
 						}
@@ -220,6 +220,10 @@
 						&:hover {
 							color: $white;
 						}
+
+						&:after {
+							display: none !important;
+						}
 					}
 
 					.secondary-wrapper {
@@ -283,6 +287,10 @@
 									&:hover {
 										color: $brand-blue;
 										background-color: transparent;
+									}
+
+									&:after {
+										display: none !important;
 									}
 								}
 
