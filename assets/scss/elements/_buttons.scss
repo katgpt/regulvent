@@ -4,86 +4,87 @@
 	justify-content: center;
 	text-align: center;
 	font-weight: 600;
-}
-.btn-primary {
 	padding: 15px 24px;
-	vertical-align: middle;
-	background: $bright-blue;
 	font-size: 18px;
 	line-height: 18px;
-	height: 48px;
-	opacity: 1;
+	min-height: 48px;
 	border-radius: 10px;
-	text-transform: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+.btn-primary {
+	background: $brand-blue;
+	color: $white;	
+	border: 1px solid transparent;
 	&:hover {
-		background: sky-blue;
+		background: $light-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 	&:focus {
-		background: sky-blue;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 	&:active {
-		background: $strong-blue;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 }
 .btn-secondary {
-	padding: 12px 25px;
-	vertical-align: middle;
-	background: $bright-blue;
-	font-size: 14px;
-	line-height: 14px;
-	height: 38px;
-	opacity: 1;
-	border-radius: 8px;
-	text-transform: none;
+	background: $dark-grey;
+	color: $white;	
+	border: 1px solid transparent;
 	&:hover {
-		background: sky-blue;
+		background: $light-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 	&:focus {
-		background: sky-blue;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 	&:active {
-		background: $strong-blue;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 }
-.btn-tertiary {
-	padding: 12px 25px;
-	vertical-align: middle;
-	background: $dark-gray;
-	font-size: 14px;
-	line-height: 14px;
-	height: 38px;
-	opacity: 1;
-	border-radius: 8px;
-	text-transform: none;
-	&:hover {
-		background: sky-blue;
-	}
-	&:focus {
-		background: sky-blue;
-	}
-	&:active {
-		background: $strong-blue;
-	}
-}
-.btn-quaternary {
-	padding: 12px 25px;
-	vertical-align: middle;
+
+.btn-outline {
 	background: $white;
-	font-size: 14px;
-	line-height: 14px;
-	height: 38px;
-	opacity: 1;
-	border: 1px solid $dark-gray;
-	border-radius: 8px;
-	text-transform: none;
+	border: 1px solid $dark-grey;
+	color: $dark-grey;
 	&:hover {
-		background: $dark-gray;
+		background: $dark-grey;
+		color: $white;	
+		border: 1px solid $dark-grey;
 	}
 	&:focus {
-		background: $dark-gray;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 	&:active {
-		background: $strong-blue;
+		background: $dark-blue;
+		color: $white;	
+		border: 1px solid transparent;
 	}
 }
- 
+
+.btn-small {
+	font-size: 14px;
+	line-height: 14px;
+	min-height: 38px;
+	border-radius: 8px;
+}
+
+.btn-large {
+	font-size: 20px;
+	line-height: 20px;
+	min-height: 60px;
+	border-radius: 12px;
+}

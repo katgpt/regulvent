@@ -1,42 +1,20 @@
-(function($) { $(function() {    
+(function($) { $(function() {
 
-    // Залипающее меню
-    $(window).scroll(function(){
-        if( $(window).scrollTop() > 81 ) {                
-            $('header').addClass('header-sticky');                       
-                                                                     
-        } else {
-            $('header').removeClass('header-sticky');              
-        }
-    });    
+    // Preloader
+    /*$(window).on('load', function () {
+        preloader = $('.loaderArea'),
+        loader = preloader.find('.loader');
+        $('html').removeClass('overflow-hidden');
+        $('body').removeClass('overflow-hidden');
+        loader.delay(500).fadeOut();
+        preloader.delay(500).fadeOut('slow');
+    });*/
 
     // Мобильное меню и burger button и выпадающее подменю на ховере
-    toggleButton = $('.toggle-button'),
-    menuWrap = $('.menu-wrap'),
-    sidebarArrow = $('.menu-item-has-children a');
-    
-    toggleButton.on('click', function() {
-        $(this).toggleClass('button-open');
-        menuWrap.toggleClass('menu-show');            
-    });
-    if(window.innerWidth < 991) {
-        sidebarArrow.click(function() {
-            $(this).next().slideToggle(300);
-        });
-    };
-
-    // Мобильное меню и burger button и выпадающее подменю на клике
-    /*toggleButton = $('.toggle-button'),
-    menuWrap = $('.menu-wrap'),
-    sidebarArrow = $('.menu-item-has-children a');
-
-    toggleButton.on('click', function() {
-        $(this).toggleClass('button-open');
-        $menuWrap.toggleClass('menu-show');
-    });
+    sidebarArrow = $('.menu-item-has-children > a');    
     sidebarArrow.click(function() {
         $(this).next().slideToggle(300);
-    });*/
+    });
 
     // Кнопка Вверх
     $(window).scroll(function(){
@@ -51,44 +29,55 @@
         return false;
     });
 
-    // ScrollTo - Скролл до якоря #     
-    $('a.target-btn[href^="#"]').bind('click.smoothscroll',function (e) {
-        e.preventDefault();
-        var target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - ($('header').height())
-        }, 600);
-    });    
-
-    // Меняем свойства Лайтбокса
-    /*lightbox.option({
-      'albumLabel': "Изображение %1 из %2"
-    });*/
-
-    // Инициализация карусели    
-    /*$('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        prevArrow: '<img src="/wp-content/themes/foto/assets/img/arr-prev.png" alt="" class="arr-prev">',
-        nextArrow: '<img src="/wp-content/themes/foto/assets/img/arr-next.png" alt="" class="arr-next">',
-        dots: true,
-        appendDots: '.reviews-dots',
-        speed: 1000,
-        //adaptiveHeight: true,
-        fade: true,
-        responsive: [            
-            {
-                breakpoint: 768,
-                settings: {
-                    pauseOnFocus: false,
-                    pauseOnHover: false
-                }
-            }     
-        ]
-    });*/ 
-
 }) })(jQuery)
+
+
+
+
+window.addEventListener('load', () => {
+   /*Sticky header*/
+    var header = document.querySelector('.header-wrapper');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 30) {
+            header.classList.add('header-sticky');
+        } else {
+            header.classList.remove('header-sticky');
+        }
+    });
+
+
+   /*Menu toggle*/
+    const toggleButton = document.querySelector('.app-toggle-button')
+    const navMenu = document.querySelector('.menu-wrapper')
+    const bodyWrapper = document.querySelector('body')
+    const htmlWrapper = document.querySelector('html')
+    const headerWrapper = document.querySelector('.header-wrapper')
+    if (toggleButton) { // add event listener only of button exists
+        toggleButton.addEventListener('click', function() {   
+            if(!this.classList.contains('button-open')) {
+                this.classList.add('button-open')
+                navMenu.classList.add('menu-wrapper-show')                
+                bodyWrapper.classList.add('overflow-hidden')
+                htmlWrapper.classList.add('overflow-hidden')
+                headerWrapper.classList.add('header-wrapper-open')
+            } else {
+                this.classList.remove('button-open')
+                navMenu.classList.remove('menu-wrapper-show')                
+                bodyWrapper.classList.remove('overflow-hidden')    
+                htmlWrapper.classList.remove('overflow-hidden')   
+                headerWrapper.classList.remove('header-wrapper-open')
+            }       
+        })
+    }
+
+
+    /*Sub menu*/
+    const items = document.querySelectorAll('.sub-main-menu-item');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            items.forEach(el => el.classList.remove('visible-hover'));
+            item.classList.add('visible-hover');
+        });
+    });
+});
