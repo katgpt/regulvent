@@ -146,7 +146,11 @@
 	}
 
 	.widget-html {
-		text-align: center;
+		
+		@media screen and (max-width: 1199.9px) {
+			text-align: center;
+		}
+
 		img {
 			width: 100%;
 			max-width: 290px;

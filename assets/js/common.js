@@ -107,4 +107,41 @@ window.addEventListener('load', () => {
             }       
         })
     }
+
+
+
+
+    var swiper = new Swiper(".projects-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".projects-swiper-pagination",
+        },        
+        navigation: {
+            nextEl: ".projects-swiper-button-next",
+            prevEl: ".projects-swiper-button-prev",
+        },
+    });
+
+
+
+
+    var swiper = new Swiper(".documents-slider", {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        pagination: false,
+        navigation: {
+            nextEl: ".docs-swiper-button-next",
+            prevEl: ".docs-swiper-button-prev",
+        },
+    });
 });

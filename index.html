@@ -11,19 +11,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     
-    <!--slickslider-->
-    <!--<link rel="stylesheet" type="text/css" href="assets/libs/slick-1.8.1/slick/slick.css"/>-->
-
     <!--lightgallery--> 
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-thumbnail.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lg-video.min.css"> --> 
 
-    <!--bootstrap-select-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">-->     
-
     <!--Swiper-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">     
@@ -206,38 +200,40 @@
 
 	<!-- Тело сайта начало -->
 	<main>
-		<div class="main-banner">
+		<div class="main-banner mb-100">
 			<div class="video-for-banner">
 				<video autoplay muted loop class="banner-video">
 			        <source src="assets/img/video/video.mp4" type="video/mp4">
 			    </video>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6">
-						<div class="main-banner-info">
-							<h1>ГРУППА КОМПАНИЙ <span>РЕГУЛВЕНТ</span></h1>
-							<h4>Надежные системы вентиляции, кондиционирования и аспирации любой сложности «под ключ»</h4>
-							<button class="btn btn-primary btn-large" data-bs-toggle="modal" data-bs-target="#callback">Рассчитать смету</button>
+			<div class="main-info">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-6">
+							<div class="main-banner-info">
+								<h1>ГРУППА КОМПАНИЙ <span>РЕГУЛВЕНТ</span></h1>
+								<h4>Надежные системы вентиляции, кондиционирования и аспирации любой сложности «под ключ»</h4>
+								<button class="btn btn-primary btn-large" data-bs-toggle="modal" data-bs-target="#callback">Рассчитать смету</button>
+							</div>
 						</div>
-					</div>
-					<div class="col-xl-6">
-						<div class="main-banner-cards">
-							<div class="single-card">
-								<img src="assets/img/card1.svg" alt="">
-								<h5>Проектирование, Монтаж, Обслуживание</h5>
-							</div>
-							<div class="single-card">
-								<img src="assets/img/card2.svg" alt="">
-								<h5>От локальных систем до промышленных объектов</h5>
-							</div>
-							<div class="single-card">
-								<img src="assets/img/card3.svg" alt="">
-								<h5>Работаем по Москве и Московской области</h5>
-							</div>
-							<div class="single-card">
-								<img src="assets/img/card4.svg" alt="">
-								<h5>Бесплатная консультация</h5>
+						<div class="col-xl-6">
+							<div class="main-banner-cards">
+								<div class="single-card">
+									<img src="assets/img/card1.svg" alt="">
+									<h5>Проектирование, Монтаж, Обслуживание</h5>
+								</div>
+								<div class="single-card">
+									<img src="assets/img/card2.svg" alt="">
+									<h5>От локальных систем до промышленных объектов</h5>
+								</div>
+								<div class="single-card">
+									<img src="assets/img/card3.svg" alt="">
+									<h5>Работаем по Москве и Московской области</h5>
+								</div>
+								<div class="single-card">
+									<img src="assets/img/card4.svg" alt="">
+									<h5>Бесплатная консультация</h5>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -245,80 +241,82 @@
 			</div>
 		</div>
 
-		<div class="vent-block">
+		<div class="vent-block mb-100">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-10">
+					<div class="col-xl-10 m-auto p-0">
 						<h2>Виды вентиляции</h2>
 						<div class="all-vent">
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service1.svg" alt="">
+										<img src="assets/img/services/service1.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Приточная вентиляция</h3>
-										<p>Подача свежего воздуха в помещение</p>
+										<p class="text-large mb-0">Подача свежего воздуха в помещение</p>
 									</div>
 								</a>
 							</div>
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service2.svg" alt="">
+										<img src="assets/img/services/service2.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Вытяжная вентиляция</h3>
-										<p>Удаление отработанного воздуха, запахов и влаги</p>
+										<p class="text-large mb-0">Удаление отработанного воздуха, запахов и влаги</p>
 									</div>
 								</a>
 							</div>
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service3.svg" alt="">
+										<img src="assets/img/services/service3.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Приточно-вытяжная вентиляция</h3>
-										<p>Комплексное решение для поддержания оптимального микроклимата</p>
+										<p class="text-large mb-0">Комплексное решение для поддержания оптимального микроклимата</p>
 									</div>
 								</a>
 							</div>
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service4.svg" alt="">
+										<img src="assets/img/services/service4.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Системы с рекуперацией тепла</h3>
-										<p>Экономия энергии и снижение затрат на отопление</p>
+										<p class="text-large mb-0">Экономия энергии и снижение затрат на отопление</p>
 									</div>
 								</a>
 							</div>
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service5.svg" alt="">
+										<img src="assets/img/services/service5.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Противодымная вентиляция</h3>
-										<p>Система дымоудаления в случае пожара</p>
+										<p class="text-large mb-0">Система дымоудаления в случае пожара</p>
 									</div>
 								</a>
 							</div>
 							<div class="single-vent">
 								<a href="#">
 									<div class="image-wrapper">
-										<img src="assets/img/services/service6.svg" alt="">
+										<img src="assets/img/services/service6.png" alt="">
 									</div>
 									<div class="vent-info">
 										<h3>Аспирация</h3>
-										<p>Удаление загрязненного воздуха на производстве и замена его свежим</p>
+										<p class="text-large mb-0">Удаление загрязненного воздуха на производстве и замена его свежим</p>
 									</div>
 								</a>
 							</div>
 						</div>
-						<button class="btn btn-primary btn-large" data-bs-toggle="modal" data-bs-target="#callback">ПОЛУЧИТЬ РАСЧЕТ</button>
+						<div class="text-center w-100">
+							<button class="btn btn-primary btn-large" data-bs-toggle="modal" data-bs-target="#callback">ПОЛУЧИТЬ РАСЧЕТ</button>
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -332,7 +330,7 @@
 						<div class="all-services">
 							<div class="single-service">
 								<div class="image-wrapper">
-									<img src="assets/img/services/service7.svg" alt="">
+									<img src="assets/img/services/service7.png" alt="">
 								</div>
 								<div class="service-info">
 									<h3>Проектирование вентиляции</h3>
@@ -347,7 +345,7 @@
 							</div>
 							<div class="single-service">
 								<div class="image-wrapper">
-									<img src="assets/img/services/service8.svg" alt="">
+									<img src="assets/img/services/service8.png" alt="">
 								</div>
 								<div class="service-info">
 									<h3>Монтаж вентиляции</h3>
@@ -362,7 +360,7 @@
 							</div>
 							<div class="single-service">
 								<div class="image-wrapper">
-									<img src="assets/img/services/service9.svg" alt="">
+									<img src="assets/img/services/service9.png" alt="">
 								</div>
 								<div class="service-info">
 									<h3>Обслуживание вентиляции</h3>
@@ -553,35 +551,35 @@
 						</div>
 						<div class="col-lg-4">
 							<div class="single-reason">
-								<img src="assets/img/reasons/icon1.svg" alt="">
+								<img src="assets/img/reasons/icon2.svg" alt="">
 								<h4>Опытная команда</h4>
 								<h6>Собственный проектный отдел, квалифицированные инженеры, монтажники и сервисная служба</h6>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-reason">
-								<img src="assets/img/reasons/icon1.svg" alt="">
+								<img src="assets/img/reasons/icon3.svg" alt="">
 								<h4>Индивидуальный подход</h4>
 								<h6>Учитываем особенности каждого объекта, сферы бизнеса и пожелания клиента</h6>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-reason">
-								<img src="assets/img/reasons/icon1.svg" alt="">
+								<img src="assets/img/reasons/icon4.svg" alt="">
 								<h4>Современные решения</h4>
 								<h6>Используем только проверенные технологии, отвечающие течению времени и сертифицированное оборудование</h6>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-reason">
-								<img src="assets/img/reasons/icon1.svg" alt="">
+								<img src="assets/img/reasons/icon5.svg" alt="">
 								<h4>Соблюдаем закон</h4>
 								<h6>Работаем в соответствии со СНиП, действующими строительными нормами и законодательством РФ</h6>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-reason">
-								<img src="assets/img/reasons/icon1.svg" alt="">
+								<img src="assets/img/reasons/icon6.svg" alt="">
 								<h4>Работаем строго по договору</h4>
 								<h6>Без скрытых дополнительных платежей и с соблюдением сроков</h6>
 							</div>
@@ -597,7 +595,38 @@
 							<h2>Наши проекты</h2>
 							<p>За годы работы мы выполнили проекты для жилых комплексов, ресторанов, торговых центров, офисных зданий, промышленных объектов и частных заказчиков. Наши клиенты ценят нас за профессионализм, ответственность и индивидуальный подход.</p>
 							<div class="projects-slider-wrapper">
-								
+								<div class="projects-navigations">
+									<div class="projects-swiper-button-prev">
+										<svg class="icon" width="60" height="60">
+									        <use xlink:href="assets/img/sprites/sprites.svg#icon-prev"></use>
+									    </svg>
+									</div>
+							    	<div class="projects-swiper-button-next">
+							    		<svg class="icon" width="60" height="60">
+									        <use xlink:href="assets/img/sprites/sprites.svg#icon-next"></use>
+									    </svg>
+							    	</div>
+								</div>
+								<div class="swiper projects-slider">
+									<div class="swiper-wrapper">
+										<div class="single-slide swiper-slide">
+											<img src="assets/img/images/img1.png" alt="">
+										</div>
+										<div class="single-slide swiper-slide">
+											<img src="assets/img/images/img2.png" alt="">
+										</div>
+										<div class="single-slide swiper-slide">
+											<img src="assets/img/images/img3.png" alt="">
+										</div>
+										<div class="single-slide swiper-slide">
+											<img src="assets/img/images/img4.png" alt="">
+										</div>
+										<div class="single-slide swiper-slide">
+											<img src="assets/img/images/img5.png" alt="">
+										</div>
+									</div>
+									<div class="projects-swiper-pagination"></div>
+								</div>								
 							</div>
 						</div>
 					</div>
@@ -657,23 +686,36 @@
 								<h2>Лицензии и сертификаты</h2>
 								<p>Компания имеет все необходимые лицензии и сертификаты для выполнения работ по проектированию и монтажу вентиляционных систем. Мы являемся официальными дилерами ведущих производителей вентиляционного оборудования, что гарантирует высокое качество и надёжность всех установленных решений.</p>
 							</div>
-							<div class="docs-navigation"></div>
+							<div class="docs-navigation">
+								<div class="docs-swiper-button-prev">
+									<svg class="icon" width="60" height="60">
+								        <use xlink:href="assets/img/sprites/sprites.svg#icon-prev"></use>
+								    </svg>
+								</div>
+						    	<div class="docs-swiper-button-next">
+						    		<svg class="icon" width="60" height="60">
+								        <use xlink:href="assets/img/sprites/sprites.svg#icon-next"></use>
+								    </svg>
+						    	</div>
+							</div>
 						</div>
-						<div class="documents-slider">
-							<div class="single-slide">
-								<img src="assets/img/docs/doc1.png" alt="">
-							</div>
-							<div class="single-slide">
-								<img src="assets/img/docs/doc2.png" alt="">
-							</div>
-							<div class="single-slide">
-								<img src="assets/img/docs/doc3.png" alt="">
-							</div>
-							<div class="single-slide">
-								<img src="assets/img/docs/doc4.png" alt="">
-							</div>
-							<div class="single-slide">
-								<img src="assets/img/docs/doc5.png" alt="">
+						<div class="swiper documents-slider">
+							<div class="swiper-wrapper">
+								<div class="single-slide swiper-slide">
+									<img src="assets/img/docs/doc1.png" alt="">
+								</div>
+								<div class="single-slide swiper-slide">
+									<img src="assets/img/docs/doc2.png" alt="">
+								</div>
+								<div class="single-slide swiper-slide">
+									<img src="assets/img/docs/doc3.png" alt="">
+								</div>
+								<div class="single-slide swiper-slide">
+									<img src="assets/img/docs/doc4.png" alt="">
+								</div>
+								<div class="single-slide swiper-slide">
+									<img src="assets/img/docs/doc2.png" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -681,11 +723,108 @@
 			</div>
 		</div>
 		
+		<div class="director-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="boss-wrapper">
+							<div class="image-wrapper">
+								<img src="assets/img/boss.png" alt=""/>
+							</div>
+							<div class="boss-info">
+								<div class="boss-quote">
+									<p>"Мы создаём не просто вентиляционные системы — мы создаём комфортную среду и чистый воздух для жизни и работы. Наша миссия — обеспечивать клиентов надёжными и современными решениями на долгие годы.<br/><br/> Мы ценим доверие наших партнёров и всегда стремимся превзойти ожидания. Спасибо, что доверяете нам самое ценное — ваш комфорт, здоровье и безопасность!"</p>
+								</div>
+								<div class="boss-info">
+						          	<span class="boss-role">Самохин Денис Юрьевич,</span>
+						          	<span class="boss-role">Генеральный директор ООО «РЕГУЛВЕНТ»</span>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="form-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="form-wrapper">
+							<div class="form-container">
+								<h3>Подберем оптимальное оборудование и рассчитаем стоимость монтажа без переплат.</h3>
+								<form action="">
+									<div class="form-group form-floating">
+										<input class="form-control your-name" type="text" placeholder="Ваше имя*" name="your-name" value="" required>
+										<label for="your-name">Ваше имя*</label>
+									</div>
+									<div class="form-group form-floating">
+										<input class="form-control phone" type="text" placeholder="Телефон*" name="phone" value="" required>
+										<label for="phone">Телефон*</label>
+									</div>
+									<div class="form-group form-check">
+										<input type="checkbox" class="form-check-input" required id="agreement" checked>
+				                        <label class="form-check-label" for="agreement">Я ознакомлен(-а) с <a href="#">Политикой конфиденциальности</a> и даю <a href="#">согласие на обработку своих персональных данных</a></label>
+								    </div>
+								    <div class="form-group text-center m-0">         
+									    <button type="submit" class="btn btn-primary btn-large">Получить расчет проекта</button>
+									    <span>БЕСПЛАТНО!</span>
+								    </div>			
+								</form>
+							</div>
+							<div class="image-block">
+								<img src="assets/img/form2.svg" alt="">
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>			
+		</div>
 	</main>
 	<!-- Тело сайта конец -->
 
 	<!-- Подвал сайта начало -->
+	<div class="map-block">
+		<iframe src="https://yandex.com/map-widget/v1/?ll=38.480369%2C55.797996&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxOTc1NDA1MjcxEmfQoNC-0YHRgdC40Y8sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQrdC70LXQutGC0YDQvtGB0YLQsNC70YwsINCb0LXRgdC90LDRjyDRg9C70LjRhtCwLCA2IgoNyOwZQhWIMF9C&source=serp_navig&tab=inside&z=15.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+		<div class="contact-map-wrapper">
+			<h3>Контакты</h3>
+			<div class="contacts-block">
+				<div class="single-element">
+					<a href="tel:+74952150117">
+						<svg class="icon" width="25" height="25">
+					        <use xlink:href="assets/img/sprites/sprites.svg#icon-phone"></use>
+					    </svg>
+						<h6>+7 (495) 215 01 17</h6>
+					</a>
+				</div>
+				<div class="single-element">
+					<a href="mailto:info@regul-vent.ru">
+						<svg class="icon" width="25" height="25">
+					        <use xlink:href="assets/img/sprites/sprites.svg#icon-email"></use>
+					    </svg>
+						<h6>info@regul-vent.ru</h6>
+					</a>
+				</div>
+				<div class="single-element">
+					<div>
+						<svg class="icon" width="25" height="25">
+					        <use xlink:href="assets/img/sprites/sprites.svg#icon-pin"></use>
+					    </svg>
+						<h6>Московская область, г. Электросталь, ул. Лесная, д. 6, помещение №1</h6>
+					</div>
+				</div>
+				<div class="single-element">
+					<div>
+						<svg class="icon" width="25" height="25">
+					        <use xlink:href="assets/img/sprites/sprites.svg#icon-clock"></use>
+					    </svg>
+						<h6>Пн-Пт с 10:00 до 18:00</h6>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</div>
+
 	<footer class="footer-wrapper">
 		<div class="container">
 			<div class="row">
@@ -849,21 +988,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 	<!-- Swiper -->    
-    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>--> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Bootstrap.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-	<!-- Slick Слайдер --> 
-	<!--<script type="text/javascript" src="assets/libs/slick-1.8.1/slick/slick.min.js"></script>--> 
 
 	<!-- Lightgallery -->
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/video/lg-video.min.js"></script>-->
-
-	<!-- bootstrap-select -->
-	<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>-->
 
 	<!-- Custom Scripts -->	
 	<script src="assets/js/common.js"></script>
