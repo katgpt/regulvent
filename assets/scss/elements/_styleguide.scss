@@ -217,8 +217,16 @@ template {
 
 .mb-100 {
     margin-bottom: 100px;
+
+    @media screen and (max-width: 1199.9px) {
+        margin-bottom: 60px;
+    }
 }
 
 .mb-60 {
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1199.9px) {
+        margin-bottom: 30px;
+    }
 }

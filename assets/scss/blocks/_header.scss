@@ -2,12 +2,24 @@
 	position: relative;
 	padding: 0;
 	color: $text-grey;
+
+	@media screen and (max-width: 1199.9px) {
+		position: fixed;
+	    padding: 0 0 10px;
+	    background: #f1f1f1;
+	    z-index: 100;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	}
+
 	.top-part {
 		padding: 20px 0;
 		@media screen and (max-width: 1199.9px) {
 			padding: 12px 0;
 		}
 	}
+
 	.logo-block {
 		a {
 			display: block;
