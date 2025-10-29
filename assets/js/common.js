@@ -114,14 +114,15 @@ window.addEventListener('load', () => {
     var swiper = new Swiper(".projects-slider", {
         effect: "coverflow",
         grabCursor: true,
+        loop: true,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth: 180,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
         },
         pagination: {
             el: ".projects-swiper-pagination",
@@ -137,11 +138,17 @@ window.addEventListener('load', () => {
 
     var swiper = new Swiper(".documents-slider", {
         slidesPerView: 4,
-        spaceBetween: 40,
+        loop: true,
+        spaceBetween: 20,
         pagination: false,
         navigation: {
             nextEl: ".docs-swiper-button-next",
             prevEl: ".docs-swiper-button-prev",
         },
     });
+
+
+
+
+    lightGallery(document.getElementById('animated-thumbnails-gallery'));
 });
