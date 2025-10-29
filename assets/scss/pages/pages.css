@@ -204,6 +204,10 @@ body {
         .services-block .all-services .single-service .service-info p {
           margin-bottom: 0;
           color: #2B2B2B; }
+          @media screen and (max-width: 1560px) {
+            .services-block .all-services .single-service .service-info p {
+              font-size: 18px;
+              line-height: 24px; } }
         .services-block .all-services .single-service .service-info a {
           color: #00A2E6;
           display: flex;
@@ -301,6 +305,10 @@ body {
       font-size: 140px;
       line-height: 140px;
       font-weight: 700; }
+      @media screen and (max-width: 1560px) {
+        .count-block .single-count span {
+          font-size: 120px;
+          line-height: 120px; } }
     .count-block .single-count p {
       color: #2B2B2B;
       display: block;

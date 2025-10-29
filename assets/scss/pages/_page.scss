@@ -269,6 +269,11 @@ body {
 				p {
 					margin-bottom: 0;
 					color: $text-grey;
+
+					@media screen and (max-width: 1560px) {
+						font-size: 18px;
+						line-height: 24px;
+					}	
 				}
 
 				a {
@@ -408,6 +413,11 @@ body {
 			font-size: 140px;
 			line-height: 140px;
 			font-weight: 700;
+
+			@media screen and (max-width: 1560px) {
+				font-size: 120px;
+				line-height: 120px;
+			}
 		}
 
 		p {
