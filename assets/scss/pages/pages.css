@@ -1214,4 +1214,25 @@ body {
         padding: 30px 30px 40px;
         border-radius: 0; } }
 
+.breadcrumb {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500; }
+  .breadcrumb li a {
+    color: #00A2E6;
+    text-decoration: none; }
+    .breadcrumb li a:hover {
+      text-decoration: underline; }
+  .breadcrumb li.current {
+    color: #989898; }
+
+.about-block-page {
+  padding-top: 0; }
+  .about-block-page.about-block:before {
+    display: none; }
+
 /*# sourceMappingURL=pages.css.map */
