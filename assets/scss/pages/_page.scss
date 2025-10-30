@@ -1677,8 +1677,36 @@ main {
     }
 }
 .about-block-page {
-	padding-top: 0;
-	&.about-block:before {
-		display: none;
-	}	
+	.about-block {
+		padding-top: 0;
+		padding-bottom: 176px;
+		&:before {
+			display: none;
+		}
+	}
+	.director-block {
+		margin-bottom: 80px;
+	}
+	.count-block {
+		padding: 70px 0;
+	}
+	.bg-wrapper {
+		padding-top: 76px;
+	}
+	.why-us h2 {
+		margin-bottom: 100px;
+	}
+	.proud-block {
+		.boss-wrapper {
+	    	width: 100%;
+			max-width: 1526.41px;
+		    max-width: 1540px;
+		    margin: 0 auto;
+		    display: flex;
+		    align-items: stretch;
+		    justify-content: space-between;
+		    gap: 30px;
+		}
+	}
 }
+
