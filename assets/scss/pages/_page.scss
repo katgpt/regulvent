@@ -1676,6 +1676,7 @@ main {
 		}
     }
 }
+
 .about-block-page {
 	.about-block {
 		padding-top: 0;
@@ -1725,3 +1726,39 @@ main {
 	}
 }
 
+.portfolio-page {
+	.video-projects {
+		.video-grid {
+		    display: grid;
+		    grid-template-columns: repeat(3, 1fr);
+		    column-gap: 40px;
+		    row-gap: 30px;
+			.card {
+			    padding: 18px;
+			    border-radius: 16px;
+			    background-color: #f8f9fa;
+			    box-shadow: 4px 4px 24px 0px #00000029;
+			    border: none;
+			    overflow: hidden;
+				video {
+				    border-radius: 16px;
+				}
+			}
+		}
+	}
+	.documents-block {
+		background: none;
+		.title-block {
+			margin-bottom: 60px;
+			.title-info {
+				h2 {
+					margin-bottom: 30px;
+					font-weight: 900;
+				}
+				p {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

@@ -2935,4 +2935,28 @@ body {
       .about-block-page .proud-block .proud-wrapper .proud-info .proud-quote .text-normal {
         color: #989898; }
 
+.portfolio-page .video-projects .video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 30px; }
+  .portfolio-page .video-projects .video-grid .card {
+    padding: 18px;
+    border-radius: 16px;
+    background-color: #f8f9fa;
+    box-shadow: 4px 4px 24px 0px #00000029;
+    border: none;
+    overflow: hidden; }
+    .portfolio-page .video-projects .video-grid .card video {
+      border-radius: 16px; }
+.portfolio-page .documents-block {
+  background: none; }
+  .portfolio-page .documents-block .title-block {
+    margin-bottom: 60px; }
+    .portfolio-page .documents-block .title-block .title-info h2 {
+      margin-bottom: 30px;
+      font-weight: 900; }
+    .portfolio-page .documents-block .title-block .title-info p {
+      font-weight: 400; }
+
 /*# sourceMappingURL=essential.css.map */
