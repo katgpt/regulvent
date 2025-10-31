@@ -2914,14 +2914,25 @@ body {
   padding-top: 76px; }
 .about-block-page .why-us h2 {
   margin-bottom: 100px; }
-.about-block-page .proud-block .boss-wrapper {
-  width: 100%;
-  max-width: 1526.41px;
-  max-width: 1540px;
-  margin: 0 auto;
+.about-block-page .proud-block h2 {
+  text-align: center;
+  margin-bottom: 40px; }
+.about-block-page .proud-block .proud-wrapper {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
-  gap: 30px; }
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 110px; }
+  .about-block-page .proud-block .proud-wrapper .proud-info {
+    width: 330px;
+    box-shadow: 4px 4px 24px 0px #00000029;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0; }
+    .about-block-page .proud-block .proud-wrapper .proud-info .proud-quote {
+      color: #2B2B2B;
+      text-align: center;
+      padding: 10px 15px 21px; }
+      .about-block-page .proud-block .proud-wrapper .proud-info .proud-quote .text-normal {
+        color: #989898; }
 
 /*# sourceMappingURL=essential.css.map */
