@@ -1762,3 +1762,22 @@ main {
 		}
 	}
 }
+
+.documents-page {
+	.documents-block {
+		background: none;
+		.title-block {
+			margin-bottom: 60px;
+			.title-info {
+				h2 {
+					margin-bottom: 20px;
+					font-weight: 900;
+				}
+				p {
+					font-weight: 400;
+					color: $black;
+				}
+			}
+		}
+	}
+}

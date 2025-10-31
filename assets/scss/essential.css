@@ -2959,4 +2959,15 @@ body {
     .portfolio-page .documents-block .title-block .title-info p {
       font-weight: 400; }
 
+.documents-page .documents-block {
+  background: none; }
+  .documents-page .documents-block .title-block {
+    margin-bottom: 60px; }
+    .documents-page .documents-block .title-block .title-info h2 {
+      margin-bottom: 20px;
+      font-weight: 900; }
+    .documents-page .documents-block .title-block .title-info p {
+      font-weight: 400;
+      color: #000000; }
+
 /*# sourceMappingURL=essential.css.map */
