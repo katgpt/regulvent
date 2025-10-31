@@ -2970,4 +2970,34 @@ body {
       font-weight: 400;
       color: #000000; }
 
+.contacts-page .contact-wrapper .wrapper-contacts-block {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between; }
+  .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block {
+    width: calc(50% - 45px);
+    background-color: #ffffff;
+    padding: 24px 38px 34px 30px;
+    border-radius: 16px; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block h2 {
+      margin-bottom: 26px; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px; }
+      .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element a {
+        display: flex; }
+        .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element a h6 {
+          margin-bottom: 0; }
+  .contacts-page .contact-wrapper .wrapper-contacts-block .map-block {
+    width: calc(50% - 45px);
+    border-radius: 16px;
+    overflow: hidden; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .map-block img {
+      width: 100%;
+      border-radius: 16px; }
+.contacts-page .form-block .form-wrapper {
+  max-width: 100%; }
+
 /*# sourceMappingURL=essential.css.map */

@@ -1781,3 +1781,48 @@ main {
 		}
 	}
 }
+
+.contacts-page {
+	.contact-wrapper {
+		.wrapper-contacts-block {
+			display: flex;
+			gap: 70px;
+			justify-content: space-between;
+			.contacts-block {
+				width: calc(50% - 45px);
+				background-color: $white;
+				padding: 24px 38px 34px 30px;
+				border-radius: 16px;
+				h2 {
+					margin-bottom: 26px;
+				}
+				.single-element {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					margin-bottom: 10px;
+					a {
+						display: flex;
+						h6 {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.map-block {
+				width: calc(50% - 45px);
+				border-radius: 16px;
+				overflow: hidden;
+				img {
+					width: 100%;
+					border-radius: 16px;
+				}
+			}
+		}
+	}
+	.form-block {
+		.form-wrapper {
+			max-width: 100%;
+		}
+	}
+}
