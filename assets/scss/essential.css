@@ -3094,5 +3094,39 @@ body {
       justify-content: space-between;
       display: flex;
       flex-direction: column; }
+.blog-page nav ul {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px; }
+  .blog-page nav ul li {
+    width: 40px;
+    border-radius: 16px;
+    text-align: center; }
+    .blog-page nav ul li.active a {
+      border-radius: 9px;
+      background-color: #00A2E6; }
+    .blog-page nav ul li:focus-visible {
+      border: none !important; }
+    .blog-page nav ul li a {
+      display: block;
+      color: #2B2B2B;
+      font-weight: 500;
+      font-size: 24px;
+      border: none;
+      background: inherit; }
+      .blog-page nav ul li a:hover {
+        background: none; }
+      .blog-page nav ul li a:active {
+        background: none;
+        border: none; }
+      .blog-page nav ul li a:focus {
+        background: none;
+        box-shadow: none; }
+    .blog-page nav ul li span {
+      color: #2B2B2B;
+      font-weight: 500;
+      font-size: 24px;
+      border: none;
+      background: none !important; }
 
 /*# sourceMappingURL=essential.css.map */
