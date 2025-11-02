@@ -1724,6 +1724,21 @@ main {
 		    }
 		}
 	}
+
+	.documents-block {
+		.title-block {
+			margin-bottom: 50px;
+			.title-info {
+				h2 {
+					margin-bottom: 20px;
+					font-weight: 900;
+				}
+				p {
+					font-weight: 400;
+				}
+			}
+		}
+	}
 }
 
 .portfolio-page {
@@ -1795,17 +1810,40 @@ main {
 				border-radius: 16px;
 				h2 {
 					margin-bottom: 26px;
+					color: $text-grey;
 				}
-				.single-element {
-					display: flex;
-					align-items: center;
-					gap: 10px;
-					margin-bottom: 10px;
-					a {
+				.all-single-element {
+					margin-bottom: 40px;
+					.single-element {
 						display: flex;
-						h6 {
-							margin-bottom: 0;
+						align-items: center;
+						margin-bottom: 20px;
+						.single-address {
+							display: flex;
+							gap: 10px;
+							h6 {
+								margin-bottom: 0;
+								color: $text-grey;
+							}					
 						}
+						a {
+							display: flex;
+							gap: 10px;
+							h6 {
+								margin-bottom: 0;
+								color: $text-grey;
+							}
+						}
+					}
+				}
+				.company-info {
+					h4 {
+						font-weight: 800;
+						color: $text-grey;
+						margin-bottom: 20px;
+					}
+					h6 {
+						margin-bottom: 20px;
 					}
 				}
 			}

@@ -1263,6 +1263,13 @@ body {
       padding: 10px 15px 21px; }
       .about-block-page .proud-block .proud-wrapper .proud-info .proud-quote .text-normal {
         color: #989898; }
+.about-block-page .documents-block .title-block {
+  margin-bottom: 50px; }
+  .about-block-page .documents-block .title-block .title-info h2 {
+    margin-bottom: 20px;
+    font-weight: 900; }
+  .about-block-page .documents-block .title-block .title-info p {
+    font-weight: 400; }
 
 .portfolio-page .video-projects .video-grid {
   display: grid;
@@ -1309,16 +1316,32 @@ body {
     padding: 24px 38px 34px 30px;
     border-radius: 16px; }
     .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block h2 {
-      margin-bottom: 26px; }
-    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px; }
-      .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element a {
-        display: flex; }
-        .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .single-element a h6 {
-          margin-bottom: 0; }
+      margin-bottom: 26px;
+      color: #2B2B2B; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element {
+      margin-bottom: 40px; }
+      .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element .single-element {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; }
+        .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element .single-element .single-address {
+          display: flex;
+          gap: 10px; }
+          .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element .single-element .single-address h6 {
+            margin-bottom: 0;
+            color: #2B2B2B; }
+        .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element .single-element a {
+          display: flex;
+          gap: 10px; }
+          .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .all-single-element .single-element a h6 {
+            margin-bottom: 0;
+            color: #2B2B2B; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .company-info h4 {
+      font-weight: 800;
+      color: #2B2B2B;
+      margin-bottom: 20px; }
+    .contacts-page .contact-wrapper .wrapper-contacts-block .contacts-block .company-info h6 {
+      margin-bottom: 20px; }
   .contacts-page .contact-wrapper .wrapper-contacts-block .map-block {
     width: calc(50% - 45px);
     border-radius: 16px;
