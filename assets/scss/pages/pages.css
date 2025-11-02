@@ -1352,4 +1352,39 @@ body {
 .contacts-page .form-block .form-wrapper {
   max-width: 100%; }
 
+.price-page h2 {
+  color: #2B2B2B;
+  margin-bottom: 60px; }
+.price-page .price-block table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed; }
+  .price-page .price-block table thead tr th {
+    width: 33.33%;
+    color: #000000;
+    padding: 25px;
+    text-align: center;
+    background: #6DB9FF66;
+    border: 1px solid #6DB9FF; }
+    .price-page .price-block table thead tr th h4 {
+      line-height: 30px;
+      white-space: nowrap;
+      margin-bottom: 0; }
+  .price-page .price-block table tbody tr td {
+    width: 33.33%;
+    border: 1px solid #6DB9FF;
+    padding: 20px 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .price-page .price-block table tbody tr td :hover {
+      color: #0089C3; }
+    .price-page .price-block table tbody tr td a {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 28px;
+      color: #2B2B2B;
+      white-space: nowrap;
+      text-decoration: underline; }
+
 /*# sourceMappingURL=pages.css.map */

@@ -1864,3 +1864,57 @@ main {
 		}
 	}
 }
+
+.price-page {
+	h2 {
+		color: $text-grey;
+		margin-bottom: 60px;
+	}
+	.price-block {
+		table {
+			width: 100%;
+			max-width: 100%;
+    		table-layout: fixed;
+			thead {
+				tr {
+					th {
+						width: 33.33%;
+						color: $black;
+						padding: 25px;
+						text-align: center;
+						background: #6DB9FF66;
+						border: 1px solid $light-blue;
+						h4 {
+							line-height: 30px;
+							white-space: nowrap;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						width: 33.33%;
+						border: 1px solid $light-blue;
+						padding: 20px 40px;
+						white-space: nowrap;
+						overflow: hidden;        
+						text-overflow: ellipsis;     
+						:hover {
+    						color: $dark-blue;
+    					}
+						a {
+							font-weight: 400;
+							font-size: 28px;
+							line-height: 28px;
+							color: $text-grey;
+							white-space: nowrap;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
