@@ -1387,4 +1387,15 @@ body {
       white-space: nowrap;
       text-decoration: underline; }
 
+.payment-page .payment-company {
+  color: #2B2B2B;
+  margin-bottom: 37px; }
+  .payment-page .payment-company h2 {
+    margin-bottom: 30px; }
+  .payment-page .payment-company h6 {
+    font-size: 18px;
+    font-weight: 400; }
+  .payment-page .payment-company img {
+    margin-top: -122px; }
+
 /*# sourceMappingURL=pages.css.map */
