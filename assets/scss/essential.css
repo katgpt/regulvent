@@ -2893,12 +2893,16 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500; }
-  .breadcrumb li a {
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: #00A2E6; }
+  .breadcrumb .breadcrumb-item:last-child::before {
+    color: #989898; }
+  .breadcrumb .breadcrumb-item a {
     color: #00A2E6;
     text-decoration: none; }
-    .breadcrumb li a:hover {
+    .breadcrumb .breadcrumb-item a:hover {
       text-decoration: underline; }
-  .breadcrumb li.current {
+  .breadcrumb .breadcrumb-item.active {
     color: #989898; }
 
 .about-block-page .about-block {
@@ -3128,5 +3132,40 @@ body {
       font-size: 24px;
       border: none;
       background: none !important; }
+
+.post-page {
+  color: #000000; }
+  .post-page h2 {
+    margin-bottom: 24px;
+    color: #2B2B2B; }
+  .post-page .certification-block {
+    margin-bottom: 30px; }
+    .post-page .certification-block img {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+      border-radius: 16px;
+      margin-bottom: 30px; }
+    .post-page .certification-block .text-medium {
+      margin-top: 20px; }
+  .post-page .interested-block {
+    background: #ffffff;
+    border-radius: 16px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 40px 25px;
+    color: #2B2B2B; }
+    .post-page .interested-block h4 {
+      margin-bottom: 30px; }
+    .post-page .interested-block ul {
+      list-style: none;
+      padding-left: 0; }
+      .post-page .interested-block ul li {
+        margin-top: 20px; }
+        .post-page .interested-block ul li a {
+          color: #2B2B2B; }
+          .post-page .interested-block ul li a:hover {
+            color: #00A2E6;
+            text-decoration: underline; }
 
 /*# sourceMappingURL=essential.css.map */

@@ -79,3 +79,49 @@
 		}
 	}
 }	
+
+.post-page {
+	color: $black;
+	h2 {
+		margin-bottom: 24px;
+		color: $text-grey;
+	}
+	.certification-block {
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			object-fit: contain;
+			overflow: hidden;
+			border-radius: 16px;
+			margin-bottom: 30px;
+		}
+		.text-medium {
+			margin-top: 20px;
+		}
+	}
+	.interested-block {
+		background: $white;
+		border-radius: 16px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		padding: 40px 25px;
+		color: $text-grey;
+		h4 {
+			margin-bottom: 30px;
+		}
+		ul {
+			list-style: none;
+    		padding-left: 0;
+			li {
+				margin-top: 20px;
+				a {
+					color: $text-grey;
+					&:hover {
+						color: $brand-blue;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

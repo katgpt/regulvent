@@ -1656,24 +1656,28 @@ main {
 }
 
 .breadcrumb {
-	margin-top: 80px;
-	margin-bottom: 50px;
-	list-style: none;
-	display: flex;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 500;
-  	li {
-    	a {
-			color: $brand-blue;
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-    	}
-		&.current {
-		    color: $grey;
-		}
+    margin-top: 80px;
+    margin-bottom: 50px;
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: #00A2E6;
+    }
+    .breadcrumb-item:last-child::before {
+        color: $grey; 
+    }
+    .breadcrumb-item a {
+        color: $brand-blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .breadcrumb-item.active {
+        color: $grey;
     }
 }
 
