@@ -3073,6 +3073,39 @@ body {
   .payment-page .payment-company img {
     margin-top: -122px; }
 
+.info-page {
+  color: #2B2B2B; }
+  .info-page h3 {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .info-page .two-column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #2B2B2B; }
+    .info-page .two-column-list .row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 30px; }
+    .info-page .two-column-list .bold {
+      width: 410px; }
+    .info-page .two-column-list .row > div:not(.bold) {
+      flex: 1; }
+    .info-page .two-column-list ul {
+      margin-top: 30px;
+      margin-left: 20px;
+      padding-left: 20px; }
+    .info-page .two-column-list li {
+      margin-bottom: 4px; }
+  .info-page ul {
+    margin-left: 40px;
+    padding-left: 20px; }
+  .info-page .text-large {
+    margin-top: 20px; }
+
 .blog-page h2 {
   text-align: center;
   margin-bottom: 46px; }
