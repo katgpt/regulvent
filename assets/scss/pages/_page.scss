@@ -1986,3 +1986,143 @@ main {
     	margin-top: 20px;
     }
 }
+
+.service-page {
+	.main-banner {
+		margin-bottom: 30px;
+		padding: 100px 0 150px;
+		.video-for-banner {
+			img {
+				max-width: 100%;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.main-info {
+	    .breadcrumb-item:last-child::before {
+	        color: $white; 
+	    }
+	    .breadcrumb-item.active {
+	        color: $white;
+	    }
+	    .main-banner-info {
+	    	color: $white;
+	    	h2 {
+	    		margin-bottom: 18px;
+	    	}
+	    	h6 {
+	    		margin-bottom: 32px;
+	    		width: 76%;
+	    	}
+	    }
+	    .main-banner-cards {
+	    	.single-card {
+	    		background: linear-gradient(90deg, #FFFFFF 0%, #6DB9FF 100%);
+	    		h5 {
+	    			color: $text-grey;
+	    		}
+	    	}
+	    }
+	}
+	.count-block {
+		background: inherit;
+	}
+	.why-us {
+		background-color: $white;
+		padding-top: 66px;
+	}
+	.prices-office {
+		color: $text-grey;
+		padding-top: 100px;
+		h2 {
+			margin-bottom: 30px;
+		}
+		table {
+			margin: 50px 0;
+			background-color: $white;
+			width: 100%;
+			thead {
+				tr {
+					th {
+						border: 1px solid $light-blue;
+						padding: 20px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						border: 1px solid $light-blue;
+						padding: 20px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.documents-block:nth-of-type(7) {
+	    background: inherit;
+	}
+
+	.steps-block {
+		padding-top: 50px;
+	}
+	.design-deadlines {
+		.nav {
+			border: none;
+			gap: 20px;
+    		justify-content: center;
+			.nav-link {
+				background-color: $white;
+				color: $text-grey;
+				gap: 20px;
+				border-radius: 16px;
+				padding: 30px 35px;
+				box-shadow: 4px 4px 24px 0px #0000000F;
+				&.active {
+					background-color: $brand-blue;
+					color: $white;
+				}
+			}
+		}
+		.tab-content {
+			padding-top: 50px;
+			.card {
+				border-radius: 16px;
+				border: none;
+				.card-body {
+					color: $text-grey;
+					padding: 50px 50px 94px;
+					h3 {
+						margin-bottom: 20px;
+					}
+					table {
+						margin-top: 20px;
+						width: 100%;
+						thead {
+							tr {
+								th {
+									padding: 20px 40px;
+									border: 1px solid $light-blue;
+								}
+							}
+						}
+						tbody {
+							tr {
+								td {
+									padding: 20px 40px;
+									border: 1px solid $light-blue;
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
